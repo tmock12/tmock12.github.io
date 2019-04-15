@@ -1,17 +1,29 @@
 <div class="container">
-  <header class="center-text">
+  <header class="text-center">
     <h1>Taylor Mock</h1>
   </header>
 
   <nav>
-    I'm the nav
+    <ul class="nes-list">
+      <li>
+        {{#link-to "about" class="nes-btn"}}
+          Home
+        {{/link-to}}
+      </li>
+      <li>
+        {{#link-to "social" class="nes-btn"}}
+          Social
+        {{/link-to}}
+      </li>
+    </ul>
   </nav>
 
   <main>
-    {{ outlet }}
+    <div class="nes-container with-title is-rounded">
+      {{ outlet }}
+    </div>
   </main>
 
   <footer>
-    on the footer
   </footer>
 </div>
